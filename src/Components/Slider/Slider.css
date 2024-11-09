@@ -1,0 +1,79 @@
+
+/* Container to hide overflow and control alignment */
+.slider-container {
+    overflow: hidden;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    position: relative; 
+}
+
+.slider-container::before,
+.slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px; 
+    height: 100%;
+    /* background: linear-gradient(to right, #181C1F, transparent); */
+    background: linear-gradient(to right, rgb(24, 28, 31), rgba(24, 28, 31, 0));
+    z-index: 1;
+}
+
+.slider-container::after {
+    right: 0;
+    /* background: linear-gradient(to left, #181C1F, transparent); */
+    background: linear-gradient(to left, rgb(24, 28, 31), rgba(19, 142, 236, 0)); /* Gradient with opacity */
+}
+
+
+.slider {
+    display: flex;
+    gap: 20px;
+    animation: scroll-left 25s linear infinite;
+}
+.slider:hover {
+    animation: scroll-left 35s linear infinite;
+}
+
+
+#slider2{
+    animation: scroll-right 25s linear infinite;
+}
+#slider2:hover{
+    animation: scroll-right 35s linear infinite;
+}
+
+
+.slider {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+}
+
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
