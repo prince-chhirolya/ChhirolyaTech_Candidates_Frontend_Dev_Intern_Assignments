@@ -1,0 +1,88 @@
+/* Home.css */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .home {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .home-heading h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .highlight {
+    background: linear-gradient(180deg, #60376f, #61437f, #8a65e0);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .home-subtitle {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  .home-buttons {
+    margin-top: 40px;
+  }
+  
+  .home-button {
+    background: linear-gradient(180deg, #1a2a6c, #2b5876, #0f0f39);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .home-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Circles for animated background effect */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #1a2a6c, #2b5876, #0f0f39);
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+  
+  .circle1 {
+    top: 30%;
+    left: 20%;
+  }
+  
+  .circle2 {
+    bottom: 30%;
+    right: 20%;
+  }
+  
+  @media (max-width: 768px) {
+    .home-heading h1 {
+      font-size: 2rem;
+    }
+    .home-subtitle {
+      font-size: 1rem;
+    }
+    .circle {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
