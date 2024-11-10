@@ -1,0 +1,32 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1b1b1d;
+    color: #fff;
+  }
+  
+  .nav-links a, .hiring {
+    margin-right: 1.5rem;
+    color: #b8b8b8;
+    text-decoration: none;
+  }
+  
+  .start-btn {
+    background-color: #ffc700;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .login-btn {
+    margin-right: 1rem;
+    background: none;
+    border: none;
+    color: #b8b8b8;
+    cursor: pointer;
+  }
+  
