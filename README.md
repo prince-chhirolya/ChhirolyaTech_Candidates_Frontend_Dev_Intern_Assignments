@@ -1,7 +1,7 @@
 
 # GitBook Clone
 
-This is a simple clone of **GitBook** developed using **React**. The project is designed to showcase product documentation with a modern user interface, complete with a hero section, announcement banner, and fullscreen sections. It includes a responsive layout, sliders, interactive elements, and a sidebar navigation feature to simulate the GitBook experience. You can register for a webinar and view the documentation right from the homepage.
+This is a simple clone of **GitBook** developed using **React**. The project is designed to showcase product documentation with a modern user interface, complete with a hero section, announcement banner, and fullscreen sections. It includes a responsive layout, sliders, interactive elements, and a sidebar navigation feature to simulate the GitBook experience.
 
 ## Features
 
@@ -63,9 +63,9 @@ The original GitBook can be found here:
 │   │   ├── Navbar.js
 │   │   ├── Hero.js
 │   │   ├── AnnouncementBanner.js
-│   │   ├── SidebarNav.js  # Sidebar navigation component
+│   │   ├── SidebarNav.js 
 │   │   └── Footer.js
-│   ├── FullScreenSections/
+│   ├   |── FullScreenSections/
 │   │   └── FullScreenSections.js
 │   ├── App.js
 │   ├── App.css
