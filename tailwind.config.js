@@ -11,9 +11,19 @@ export default withMT ({
     extend: {
       colors:{
         customGray: '#2F3235',
+        bgAmberColor:'#F4E28D',
+        btnHoverColor:"#3F89A1",
+        heroBgColor:"#181C1F",
         titleGray:"#DEE5E5",
         gitBookEditorBtn:"#61977F",
-        publishedSiteBtn:"#FDA599"
+        publishedSiteBtn:"#FDA599",
+        publicDocsSectionBg: '#BBDDE5',
+        internalDocsSectionBg:'#F4E28D',
+        gitSyncSectinBg:'#FDA599',
+        gitBookAiSectionBg:"#F2F0FF",
+        VisitorAuthenticationSectionBg:'#3F89A1',
+        IntegrationsSectionBg:'#202427',
+        sideBarIconColor:'#3F89A1'
       }
     },
   },

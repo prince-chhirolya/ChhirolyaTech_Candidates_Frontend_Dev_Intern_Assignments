@@ -33,17 +33,17 @@
     gap: 20px;
     animation: scroll-left 25s linear infinite;
 }
-.slider:hover {
+/* .slider:hover {
     animation: scroll-left 35s linear infinite;
-}
+} */
 
 
 #slider2{
     animation: scroll-right 25s linear infinite;
 }
-#slider2:hover{
+/* #slider2:hover{
     animation: scroll-right 35s linear infinite;
-}
+} */
 
 
 .slider {
