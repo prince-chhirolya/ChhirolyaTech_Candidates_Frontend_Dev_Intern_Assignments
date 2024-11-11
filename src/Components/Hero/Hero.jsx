@@ -79,9 +79,9 @@ const Hero = () => {
                 className=" h-[337px]"
               />
             </div>
-            <div className="absolute bottom-0">
+            {/* <div className="absolute bottom-0">
               <img src="https://framerusercontent.com/images/nlPFYqZ5aD0g8lWH7qyWBYaz4Oo.png?scale-down-to=2048" alt="" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
