@@ -20,23 +20,22 @@ const Hero = () => {
             <span className="m-0 leading-none" id="subText">
               your users will love
             </span>
-            <div className="my-5">
+            <div className="my-5 mx-4 flex justify-center">
               <p
                 id="desc"
-                className="text-center text-md font-medium"
+                className="text-center text-md font-medium  lg:w-3/4 xl:w-3/5"
               >
                 Forget building your own custom docs platform. With GitBook you
                 get beautiful
-                <br />
-                documentation&nbsp;for your users, and a branch-based Git workflow
+                documentation for your users, and a branch-based Git workflow
                 for your team.
               </p>
             </div>
-            <div className="flex justify-center gap-x-3">
-              <button className="text-sm bg-customGray border-2 px-4 py-2 rounded-lg font-medium text-white tracking-wide">
+            <div className="mx-5 flex flex-col justify-center gap-4 lg:flex-row">
+              <button className="text-sm bg-customGray border-2 px-4 py-2 rounded-lg font-medium text-white tracking-wide hover:bg-btnHoverColor  transition duration-300 ease-in-out w-full md:w-auto">
                 <i className="fa-brands fa-github mx-1"></i> Sign up with GitHub
               </button>
-              <button className="text-sm bg-bgAmberColor px-4 py-2 rounded-lg font-medium text-black tracking-wide hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out">
+              <button className="text-sm bg-bgAmberColor px-4 py-2 rounded-lg font-medium text-black tracking-wide hover:bg-btnHoverColor hover:text-white transition duration-300 ease-in-out w-full md:w-auto">
                 Start for free <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>

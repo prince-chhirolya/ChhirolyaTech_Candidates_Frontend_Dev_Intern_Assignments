@@ -23,7 +23,9 @@ export default withMT ({
         gitBookAiSectionBg:"#F2F0FF",
         VisitorAuthenticationSectionBg:'#3F89A1',
         IntegrationsSectionBg:'#202427',
-        sideBarIconColor:'#3F89A1'
+        sideBarIconColor:'#3F89A1',
+        textGray:'#EDF2F2',
+        lightGray:'#F3F3F3'
       }
     },
   },

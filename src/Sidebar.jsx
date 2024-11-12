@@ -2,12 +2,19 @@ import React from 'react';
 
 const SidebarNav = ({ activeSectionId, activeBgColor, showSideBar }) => {
   const links = [
-    { id: 'section1', icon: 'fa-solid fa-book-open', menu: 'Public docs' },
-    { id: 'section2', icon: 'fa-solid fa-book', menu: 'Internal docs' },
-    { id: 'section3', icon: 'fa-brands fa-github', menu: 'Git Sync' },
-    { id: 'section4', icon: 'fa-solid fa-wand-magic-sparkles', menu: 'GitBook AI' },
-    { id: 'section5', icon: 'fa-solid fa-lock', iconColor: 'text-white', menu: 'Visitor Authentication' },
-    { id: 'section6', icon: 'fa-solid fa-puzzle-piece', iconColor: 'text-white', menu: 'Integrations' }
+    { id: 'section1', icon: 'https://framerusercontent.com/images/iOsOpg9EsU7DuEoZ9aNk1pCFSbc.svg', menu: 'Public docs' },
+    { id: 'section2', icon: 'https://framerusercontent.com/images/8cUOaG6vlHOCWj3VT0FShGpYY.svg', menu: 'Internal docs' },
+    { id: 'section3', icon: 'https://framerusercontent.com/images/IQGZTFT2cKpvSTTlUXEPonSE4.svg', menu: 'Git Sync' },
+    { id: 'section4', icon: 'https://framerusercontent.com/images/Y8sDyJNMZZadDmja6CB0QJVPY.svg', menu: 'GitBook AI' },
+    { id: 'section5', icon: 'https://framerusercontent.com/images/zA3N8dAduakisbfGOXg64hhO4Fs.svg', iconColor: 'text-white', menu: 'Visitor Authentication' },
+    { id: 'section6', icon: 'https://framerusercontent.com/images/vNoGLXnC7XsANDqFgFe9SbAC1U.svg', iconColor: 'text-white', menu: 'Integrations' }
+    
+    // { id: 'section1', icon: 'fa-solid fa-book-open', menu: 'Public docs' },
+    // { id: 'section2', icon: 'fa-solid fa-book', menu: 'Internal docs' },
+    // { id: 'section3', icon: 'fa-brands fa-github', menu: 'Git Sync' },
+    // { id: 'section4', icon: 'fa-solid fa-wand-magic-sparkles', menu: 'GitBook AI' },
+    // { id: 'section5', icon: 'fa-solid fa-lock', iconColor: 'text-white', menu: 'Visitor Authentication' },
+    // { id: 'section6', icon: 'fa-solid fa-puzzle-piece', iconColor: 'text-white', menu: 'Integrations' }
   ];
 
   const getSidebarClasses = () => {
@@ -58,7 +65,7 @@ const SidebarNav = ({ activeSectionId, activeBgColor, showSideBar }) => {
 
                     }}
                   >
-                    <i className={item.icon}></i>
+                    <img src={item.icon} alt="" />
                   </a>
 
                 </>
@@ -69,6 +76,7 @@ const SidebarNav = ({ activeSectionId, activeBgColor, showSideBar }) => {
           </div>
             <div className=''>
             <a href="#home" className='shadow-md bg-bgAmberColor rounded-full px-3 py-2 text-heroBgColor'><i className="fa-solid fa-arrow-right fa-sm"></i></a>
+            <img src="" alt="" />
           </div>
 
         </div>

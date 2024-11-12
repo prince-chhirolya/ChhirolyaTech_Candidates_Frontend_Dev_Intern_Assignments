@@ -70,10 +70,12 @@ const MainNavbar = () => {
 
     return (
         <div className="bg-heroBgColor">
-            <div className="container mx-auto relative ">
-                <img src="https://framerusercontent.com/images/owl1Ry3nFCuIDLfRWz8DY6TZg.svg" alt="" className="absolute inset-0  -z-10" />
-                <navbar className="h-max max-w-full mt-1 rounded-none lg:px-8 lg:py-4 ">
-                    <div className="flex items-center justify-between text-blue-gray-900 mx-5">
+            <div className="container mx-auto relative">
+                <div className="absolute inset-0  z-10 opacity-75">
+                    <img src="https://framerusercontent.com/images/owl1Ry3nFCuIDLfRWz8DY6TZg.svg" alt="" />
+                </div>
+                <navbar className="relative h-max max-w-full mt-1 rounded-none lg:px-8 lg:py-4 z-10">
+                    <div className="flex items-center justify-between text-blue-gray-900 mx-5 mt-2 sm:mt-0">
 
                         <svg width="302" height="34" viewBox="0 0 302 64" fill="#DEE5E5" xmlns="http://www.w3.org/2000/svg">
                             <path d="M108.362 47.1057C97.9981 47.1057 91.746 40.9375 91.746 32C91.746 23.1883 98.04 16.8943 108.404 16.8943C117.803 16.8943 122.881 21.426 123.3 27.3844H117.216C116.922 24.9926 114.824 22.0134 108.74 22.0134H108.069C101.774 22.0134 97.5785 25.664 97.5785 32C97.5785 38.336 101.858 41.9865 108.069 41.9865H108.74C114.866 41.9865 118.181 39.1332 118.181 36.7415V36.4058H108.53V31.2867H119.733C122.293 31.2867 123.72 32.7553 123.72 35.3149V46.6861H118.181V43.4132C117.048 44.8399 114.069 47.1057 108.362 47.1057Z" fill="DEE5E5" />
@@ -143,22 +145,27 @@ const MainNavbar = () => {
                         </div>
                     </div>
                     <MobileNav open={openNav}>
-                    {navList}
-                   <div className="flex items-center gap-x-2">
-                            <button
-                                className="  lg:inline-block bg-black px-4 py-1 rounded-lg font-bold text-white tracking-wide "
-
-                            >
-                                <span>Login</span>
+                        {/* <div className="flex justify-center text-center">
+                            {navList}
+                        </div> */}
+                        <div className="m-5 flex flex-col items-center justify-center gap-4 p-5 bg-white rounded-lg text-heroBgColor">
+                            <button className="text-sm bg-lightGray border-2 px-4 py-2 rounded-lg font-medium text-heroBgcolor tracking-wide border-heroBgColor hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out w-full">
+                                <i className="fa-brands fa-github mx-1"></i> Sign up with GitHub
                             </button>
                             <button
-                                className="lg:inline-block bg-bgAmberColor px-4 py-1 rounded-lg font-bold text-black tracking-wide hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out"
+                                className="lg:inline-block bg-bgAmberColor px-4 py-1 rounded-lg font-medium  tracking-wide hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out w-full"
                             >
                                 <span>Start for free <i class="fa-solid fa-arrow-right"></i></span>
 
                             </button>
+                            <button
+                                className="  lg:inline-block  px-4 py-1 rounded-lg font-medium  tracking-wide "
+
+                            >
+                                <span>Login</span>
+                            </button>
                         </div>
-                </MobileNav>
+                    </MobileNav>
                 </navbar>
             </div>
         </div>
