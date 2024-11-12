@@ -4,10 +4,10 @@ import Slider from "../Slider/Slider";
 import Slider2 from "../Slider/Slider2";
 const Hero = () => {
   return (
-    <div className="bg-heroBgColor">
+    <div className="bg-heroBgColor" id="home">
       <div className="container mx-auto">
-        <div className="flex flex-col  items-center text-center text-white">
-          <div className="imageDiv size-24 mb-2">
+        <div className="flex flex-col  items-center text-center text-white ">
+          <div className="imageDiv size-24 mt-3 mb-2">
             <img
               src="https://framerusercontent.com/images/vi1UE1TACnItuCAWiKCSWjsHg.png"
               alt=""
@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="my-5">
               <p
                 id="desc"
-                className="text-justify text-sm md:text-lg lg:text-md font-medium"
+                className="text-center text-md font-medium"
               >
                 Forget building your own custom docs platform. With GitBook you
                 get beautiful
@@ -33,10 +33,10 @@ const Hero = () => {
               </p>
             </div>
             <div className="flex justify-center gap-x-3">
-              <button className="bg-customGray border-2 px-4 py-1 rounded-lg font-medium text-white tracking-wide">
+              <button className="text-sm bg-customGray border-2 px-4 py-2 rounded-lg font-medium text-white tracking-wide">
                 <i className="fa-brands fa-github mx-1"></i> Sign up with GitHub
               </button>
-              <button className="bg-bgAmberColor px-4 py-1 rounded-lg font-medium text-black tracking-wide hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out">
+              <button className="text-sm bg-bgAmberColor px-4 py-2 rounded-lg font-medium text-black tracking-wide hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out">
                 Start for free <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
@@ -45,13 +45,13 @@ const Hero = () => {
         <Slider />
         <Slider2 />
 
-        <div className="flex justify-center mt-10 lg:flex hidden">
+        <div className="flex justify-center mt-20 lg:flex hidden">
           <div className="relative ">
             <img
               src="https://framerusercontent.com/images/S0CrB0qUOXdVY8Qfb8rsXaaI.svg?scale-down-to=1024"
               alt=""
               width={960}
-              className=" h-[450px] opacity-50 "
+              className=" h-[450px] opacity-25 "
             />
             <div className="absolute top-2 left-12">
               <button className="bg-gitBookEditorBtn px-4 py-1 rounded-full text-sm text-black tracking-wide">

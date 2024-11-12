@@ -74,6 +74,7 @@ const data = [
         btnTextColor: "#181C1F",
         btnColor: '#F4E28D',
         bgImg: "https://framerusercontent.com/images/t7whzgDoFFtmnUQdF9zDYs2ZNU.svg",
+        bgTopImg: "https://framerusercontent.com/images/6GrcrB7FqB1r87ZhWzm81DSFE.png",
         icon: <i class="fa-solid fa-puzzle-piece"></i>
     },
 ];
@@ -81,20 +82,20 @@ const data = [
 const FullScreenSections = () => {
     const [activeBgColor, setActiveBgColor] = useState(data[0].bgColor); // Initial background color
     const [activeSectionId, setActiveSectionId] = useState(null);
-    const [showSideBar,setShowSideBar] = useState(false)
+    const [showSideBar, setShowSideBar] = useState(false)
     const sectionsRef = useRef([]);
 
     useEffect(() => {
         const handleScroll = () => {
-          const offsets = sectionsRef.current.map(section => section.getBoundingClientRect().top);
-          const activeIndex = offsets.findIndex(offset => offset >= 0 && offset <= window.innerHeight / 2);
-          setActiveSectionId(`section${activeIndex + 1}`);
+            const offsets = sectionsRef.current.map(section => section.getBoundingClientRect().top);
+            const activeIndex = offsets.findIndex(offset => offset >= 0 && offset <= window.innerHeight / 2);
+            setActiveSectionId(`section${activeIndex + 1}`);
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
-    
+    }, []);
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -107,8 +108,10 @@ const FullScreenSections = () => {
                             setActiveBgColor(sectionData.bgColor);
                         }
                         setShowSideBar(true)
+                    } else {
+                        setShowSideBar(false)
                     }
-                  console.log(entry)
+                    //   console.log(entry)
                 });
             },
             {
@@ -125,8 +128,10 @@ const FullScreenSections = () => {
     }, []);
 
     return (
-        <div style={{ backgroundColor: activeBgColor, transition: "background-color 0.7s ease" }}>
-            {showSideBar && <SidebarNav sections={data.map((item) => item.id)} activeBgColor={activeBgColor} activeSectionId={activeSectionId} />}
+        <div style={{ backgroundColor: activeBgColor, transition: "background-color 0.7s ease" }} className="relative z-10">
+            <div className="hidden lg:block">
+                {<SidebarNav sections={data.map((item) => item.id)} activeBgColor={activeBgColor} activeSectionId={activeSectionId} showSideBar={showSideBar} />}
+            </div>
 
             {data.map((item, index) => (
                 <section
@@ -146,17 +151,25 @@ const FullScreenSections = () => {
                                     {/* <button className={`px-4 py-1 rounded text-sm`} style={{
                                         backgroundColor: item.btnColor ? item.btnColor : "#181C1F",
                                         color:item.btnTextColor ? item.btnTextColor : '#ffffff',
-                                    }}>{item.btnDesc} */}
+                                    }}>{item.btnDesc}</button> */}
                                     <button className={`px-4 py-1 rounded text-sm  text-white bg-heroBgColor hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out`}>{item.btnDesc}
                                         <i className="fa-solid fa-arrow-right fa-sm ms-2"></i></button>
                                 </div>
                             </div>
                             <div className="relative flex justify-center items-center basis-1/2">
-                                <img
-                                    src={item.bgImg}
-                                    alt=""
-                                    className="h-96 opacity-50"
-                                />
+                                {item.bgTopImg ? (
+                                    <img
+                                        src={item.bgTopImg}
+                                        alt=""
+                                        className="h-96"
+                                    />
+                                ) : (
+                                    <img
+                                        src={item.bgImg}
+                                        alt=""
+                                        className="h-96 opacity-50"
+                                    />
+                                )}
                                 <div className="absolute z-10">
                                     <figure>
                                         <video
@@ -173,6 +186,9 @@ const FullScreenSections = () => {
                     </div>
                 </section>
             ))}
+            <div className="absolute bottom-0 -z-10 opacity-75">
+                <img src="https://framerusercontent.com/images/TmiCfUq2Ne6fn24iuMP7KviIYg.svg?scale-down-to=2048" alt="" />
+            </div>
         </div>
     );
 };

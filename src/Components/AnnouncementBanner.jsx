@@ -6,7 +6,7 @@ const AnnouncementBanner = () => {
             <img
                 src="https://framerusercontent.com/images/omiO6UAv2GNlH2xkvfWGkL13IFc.svg?scale-down-to=2048"
                 alt="Announcement Banner"
-                className='h-16 w-full object-cover sm:h-10'
+                className='h-20 w-full object-cover sm:h-10'
             />
             <div className='my-1 absolute flex flex-col md:flex-row items-center justify-center md:space-x-4'>
                 <p className='font-medium text-center md:text-left'>
