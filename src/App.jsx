@@ -1,10 +1,11 @@
 import React from 'react';
 import Navbar from './Components/Navbar';
-import Hero from './Components/Hero/Hero';
+import Hero from './Pages/Hero/Hero';
 import AnnouncementBanner from './Components/AnnouncementBanner';
 import './App.css'
-import FullScreenSections from './FullScreenSections';
-import Footer from './Components/Footer/Footer';
+import FullScreenSections from './Pages/FullScreenSections';
+import Footer from './Pages/Footer/Footer';
+import Testimonals from './Pages/Testimonal/Testimonals';
 const App = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <FullScreenSections />
+        <Testimonals />
         <Footer />
     </div>
 

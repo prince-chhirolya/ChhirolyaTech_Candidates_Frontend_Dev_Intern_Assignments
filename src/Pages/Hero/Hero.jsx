@@ -1,7 +1,7 @@
 import React from "react";
-import "../Hero/Hero.css";
-import Slider from "../Slider/Slider";
-import Slider2 from "../Slider/Slider2";
+import "./Hero.css";
+import Slider from "../../Components/Slider/Slider";
+import Slider2 from "../../Components/Slider/Slider2";
 const Hero = () => {
   return (
     <div className="bg-heroBgColor" id="home">

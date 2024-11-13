@@ -25,7 +25,8 @@ export default withMT ({
         IntegrationsSectionBg:'#202427',
         sideBarIconColor:'#3F89A1',
         textGray:'#EDF2F2',
-        lightGray:'#F3F3F3'
+        lightGray:'#F3F3F3',
+        scalarTextColor:'#2A2F45'
       }
     },
   },

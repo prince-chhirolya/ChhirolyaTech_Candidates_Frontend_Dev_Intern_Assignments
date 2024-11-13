@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import SidebarNav from "./Sidebar";
+import SidebarNav from "../Sidebar";
 
 const data = [
     {
