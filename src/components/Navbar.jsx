@@ -39,10 +39,10 @@ const products = [
 ];
 
 const features = [
-  { name: "Visitor authentication", description: "Control access to your published docs", href: "#", icon: "/features1.svg" },
-  { name: "Git Sync", description: "Keep your docs and codebase in sync", href: "#", icon: "/features1.svg" },
-  { name: "GitBook AI", description: "Improve your docs with GitBook AI", href: "#", icon: "/features1.svg" },
-  { name: "Integrations", description: "Integrate with your tech stack", href: "#", icon: "/features1.svg" },
+  { name: "Visitor authentication", description: "Control access to your published docs", href: "#", icon: "/navfes1.svg" },
+  { name: "Git Sync", description: "Keep your docs and codebase in sync", href: "#", icon: "/navfes2.svg" },
+  { name: "GitBook AI", description: "Improve your docs with GitBook AI", href: "#", icon: "/navfes3.svg" },
+  { name: "Integrations", description: "Integrate with your tech stack", href: "#", icon: "/navfes4.svg" },
 ];
 
 const Resources = {
@@ -51,33 +51,34 @@ const Resources = {
       name: "Documentation",
       description: "Get more from GitBook’s powerful tools",
       href: "#",
-      icon: "/features1.svg",
+      icon: "/navres1.svg",
     },
     {
       name: "Blog",
       description: "Our latest news and announcements",
       href: "#",
-      icon: "/features1.svg",
+      icon: "/navres2.svg",
     },
     {
       name: "Events",
       description: "View our upcoming events",
       href: "#",
-      icon: "/features1.svg",
+      icon: "/navres3.svg",
     },
   ],
   FEATURED: [
     {
+      icon: "/res.png",
       name: "New in GitBook",
       description: "Free open source documentation that helps fund your project",
       href: "#",
     },
   ],
   USEFUL_LINKS: [
-    { name: "Import guide", href: "#", icon: "/features1.svg" },
-    { name: "Changelog", href: "#", icon: "/features1.svg" },
-    { name: "Newsletter", href: "#", icon: "/features1.svg" },
-    { name: "Contact and support", href: "#", icon: "/features1.svg" },
+    { name: "Import guide", href: "#", icon: "/navres4.svg" },
+    { name: "Changelog", href: "#", icon: "/navres5.svg" },
+    { name: "Newsletter", href: "#", icon: "/navres6.svg" },
+    { name: "Contact and support", href: "#", icon: "/navres7.svg" },
   ],
 };
 
@@ -85,55 +86,51 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[#181c1f]">
-      <nav aria-label="Global" className=" flex items-center justify-between xl:mx-36 px-4 sm:px-6">
+    <div className="bg-[#181c1f] navStyle">
+      {/* Main Navbar */}
+      <nav className="flex  items-center justify-center gap-8 p-4 sm:px-6 xl:mx-36">
         <div className="flex items-center gap-6">
-          <div className="flex items-center justify-between p-6 lg:px-8">
-            {/* Logo */}
-            <a href="#" className="flex items-center lg:flex-1 -m-1.5 p-1.5">
-              <span className="sr-only">Git Book</span>
-              <img alt="" src="/logo.svg" className="h-8 w-auto" />
-            </a>
-          </div>
+          <a href="#" className="flex items-center -m-1.5 p-1.5">
+            <img src="/logo.svg" alt="Logo" className="h-8 w-auto" />
+          </a>
 
-          {/* Dropdown */}
-
-          <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+          {/* Dropdown Menus */}
+          <PopoverGroup className="hidden lg:flex gap-6">
+            {/* Products Dropdown */}
             <Popover className="relative z-50">
-              <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold text-white">
+              <PopoverButton className="flex navitemFont items-center text-sm font-semibold text-white gap-x-1">
                 Products
-                <ChevronDownIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
+                <ChevronDownIcon className="h-5 w-5 text-gray-400" />
               </PopoverButton>
-              <PopoverPanel className="absolute top-full mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute mt-3 w-screen max-w-md bg-white rounded-3xl shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {products.map((item) => (
-                    <a key={item.name} href={item.href} className="flex items-center gap-x-6 p-4 hover:bg-gray-50">
-                      <img src={item.icon} className="h-6 w-6 border rounded-lg " alt="" srcSet="" />
+                  {products.map((product) => (
+                    <a key={product.name} href={product.href} className="flex items-center gap-x-4 p-4 hover:bg-gray-50">
+                      <img src={product.icon} className="h-6 w-6 rounded-lg" alt={product.name} />
                       <div className="flex-auto">
-                        <p className="font-semibold text-gray-900">{item.name}</p>
-                        <p className="text-gray-600">{item.description}</p>
+                        <p className="font-semibold text-gray-900">{product.name}</p>
+                        <p className="text-gray-600">{product.description}</p>
                       </div>
                     </a>
                   ))}
                 </div>
               </PopoverPanel>
             </Popover>
-          </PopoverGroup>
 
-          <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+            {/* Features Dropdown */}
             <Popover className="relative z-50">
-              <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold text-white">
+              <PopoverButton className="flex navitemFont items-center text-sm font-semibold text-white gap-x-1">
                 Features
-                <ChevronDownIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
+                <ChevronDownIcon className="h-5 w-5 text-gray-400" />
               </PopoverButton>
-              <PopoverPanel className="absolute top-full mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+              <PopoverPanel className="absolute mt-3 w-screen max-w-md bg-white rounded-3xl shadow-lg ring-1 ring-gray-900/5">
                 <div className="p-4">
-                  {features.map((item) => (
-                    <a key={item.name} href={item.href} className="group flex items-center gap-x-6 p-4 hover:bg-gray-50">
-                      <img src={item.icon} className="h-6 w-6 border rounded-lg " alt="" srcSet="" />
+                  {features.map((feature) => (
+                    <a key={feature.name} href={feature.href} className="flex items-center gap-x-4 p-4 hover:bg-gray-50">
+                      <img src={feature.icon} className="h-6 w-6 rounded-lg" alt={feature.name} />
                       <div className="flex-auto">
-                        <p className="font-semibold text-gray-900">{item.name}</p>
-                        <p className="text-gray-600">{item.description}</p>
+                        <p className="font-semibold text-gray-900">{feature.name}</p>
+                        <p className="text-gray-600">{feature.description}</p>
                       </div>
                     </a>
                   ))}
@@ -141,93 +138,88 @@ export default function Navbar() {
               </PopoverPanel>
             </Popover>
 
-            <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-              <Popover className="relative z-50">
-                <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold text-white">
-                  Resources
-                  <ChevronDownIcon aria-hidden="true" className="h-5 w-5 text-gray-400" />
-                </PopoverButton>
-                <PopoverPanel className="absolute top-full mt-3 w-fit rounded-xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                  <div className="py-2 px-3">
-                    <div className="flex gap-4">
-                      {Object.keys(Resources).map((category) => (
-                        <div key={category}>
-                          <h3 className="font-bold text-md">{category}</h3>
-                          <div className="">
-                            {Resources[category].map((item, index) => (
-                              <div className="w-max text-sm py-2" style={{ width: "230px" }}>
-                                <a key={item.name} href={item.href} className="flex hover:bg-gray-50 gap-2">
-                                  <img src={item.icon} className="h-6 w-6 border rounded-lg " alt="" srcSet="" />
-                                  <div className="flex-auto">
-                                    <p className="font-semibold text-gray-900">{item.name}</p>
-                                    <p className="text-gray-600">{item.description}</p>
-                                  </div>
-                                </a>
-                              </div>
-                            ))}
-                          </div>
+            {/* Resources Dropdown */}
+        
+            <Popover className="relative z-50">
+              <PopoverButton className="flex items-center navitemFont text-sm font-semibold text-white gap-x-1">
+                Resources
+                <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+              </PopoverButton>
+              <PopoverPanel className="absolute mt-3 w-screen max-w-3xl bg-white rounded-xl shadow-lg ring-1 ring-gray-900/5">
+                <div className="grid grid-cols-3 gap-6 p-6">
+                  {/* Learn Section */}
+                  <div className="flex flex-col space-y-4">
+                    <h3 className="text-sm font-bold text-gray-900 navitemFont">LEARN</h3>
+                    {Resources.LEARN.map((item) => (
+                      <a key={item.name} href={item.href} className="flex items-start gap-3 p-2 rounded-lg hover:bg-gray-50">
+                        <img src={item.icon} className="h-10 w-10 p-2 rounded-lg bg-gray-100" alt={item.name} />
+                        <div>
+                          <p className="text-sm font-semibold text-gray-900">{item.name}</p>
+                          <p className="text-sm text-gray-600">{item.description}</p>
                         </div>
-                      ))}
-                    </div>
+                      </a>
+                    ))}
                   </div>
-                </PopoverPanel>
-              </Popover>
-            </PopoverGroup>
+
+                  {/* Featured Section */}
+                  <div className="flex flex-col space-y-4">
+                    <h3 className="text-sm font-bold text-gray-900 navitemFont">FEATURED</h3>
+                    {Resources.FEATURED.map((item) => (
+                      <a key={item.name} href={item.href} className="flex flex-col items-start p-4 rounded-lg bg-gray-50 hover:bg-gray-100">
+                        <img src={item.icon} className="w-full h-auto rounded-lg mb-2" alt={item.name} />
+                        <p className="text-sm font-semibold text-gray-900">{item.name}</p>
+                        <p className="text-sm text-gray-600 mb-2">{item.description}</p>
+                        <span className="text-sm font-medium text-indigo-600">Read more &rarr;</span>
+                      </a>
+                    ))}
+                  </div>
+
+                  {/* Useful Links Section */}
+                  <div className="flex flex-col space-y-4">
+                    <h3 className="text-sm font-bold text-gray-900 navitemFont">USEFUL LINKS</h3>
+                    {Resources.USEFUL_LINKS.map((link) => (
+                      <a key={link.name} href={link.href} className="flex items-center gap-3 p-2 rounded-lg hover:bg-gray-50">
+                        <img src={link.icon} className="h-6 w-6 text-indigo-600" alt={link.name} />
+                        <p className="text-sm font-semibold text-gray-900">{link.name}</p>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </PopoverPanel>
+            </Popover>
           </PopoverGroup>
 
-          <div className="hidden space-y-2 py-6 lg:flex lg:gap-x-12">
-            <a href="" className="flex font-semibold items-center gap-x-6 p-4 text-white">
-              Pricing
-            </a>
-          </div>
+          {/* Additional Links */}
+          <a href="#" className="hidden lg:flex text-sm navitemFont items-center font-semibold text-white">
+            Pricing
+          </a>
         </div>
 
-        {/* Menu button */}
-        <div className="lg:hidden">
-          <button type="button" onClick={() => setMobileMenuOpen(true)} className="-m-2.5 p-2.5 text-white">
-            <Bars3Icon aria-hidden="true" className="h-8 w-8" />
-          </button>
+        {/* Hiring Message */}
+        <div className="hidden lg:flex items-center">
+          <span className="inline-flex items-center space-x-2 text-Yellow font-semibold">
+            <img src="/add-user.png" className="h-5 w-5" alt="" />
+            <a href="#" className="hover:underline text-sm navitemFont">
+              We're hiring
+            </a>
+          </span>
         </div>
 
-        {/* Right side links */}
-        <div className="hidden lg:flex px-3">
-          <button
-            type="button"
-            className="text-white bg-[#24292f] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 me-2  dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            <a href="#" className="text-sm font-semibold text-gray-300">
-              Log in
-            </a>
-          </button>
+        {/* Mobile Menu Button */}
+        <button type="button" onClick={() => setMobileMenuOpen(true)} className="lg:hidden p-2.5 text-white">
+          <Bars3Icon className="h-8 w-8" />
+        </button>
 
-          <button type="button" className="text-black bg-[#f4e28d]   font-medium rounded-lg text-sm px-3 py-2 me-2  focus:outline-none ">
-            <a href="#" className="text-sm font-semibold">
-              Start for Free <span aria-hidden="true">&rarr;</span>
-            </a>
-          </button>
+        {/* Right Side Buttons */}
+        <div className="hidden lg:flex px-3 gap-2">
+          <button className="text-white bg-[#24292f] text-sm navitemFont rounded-lg px-3 py-2">Login</button>
+          <button className="text-black bg-[#f4e28d] text-sm navitemFont rounded-lg px-3 py-2">Start for Free &rarr;</button>
         </div>
       </nav>
 
+      {/* Mobile Sidebar */}
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-        <DialogPanel className="fixed inset-y-0 right-0 w-full max-w-sm bg-white p-6">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <img alt="" src="" className="h-8 w-auto" />
-            </a>
-            <button type="button" onClick={() => setMobileMenuOpen(false)} className="p-2.5 text-gray-300">
-              <XMarkIcon aria-hidden="true" className="h-8 w-8" />
-            </button>
-          </div>
-          <div className="mt-6 space-y-2">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="block px-3 py-2 text-base font-semibold text-gray-300 hover:bg-gray-700">
-                {item.name}
-              </a>
-            ))}
-            <a href="#" className="block px-3 py-2.5 text-base font-semibold text-gray-300 hover:bg-gray-700">
-              Log in
-            </a>
-          </div>
-        </DialogPanel>
+        <DialogPanel className="fixed inset-y-0 right-0 w-full max-w-sm bg-white p-6">{/* Sidebar Content */}</DialogPanel>
       </Dialog>
     </div>
   );

@@ -18,15 +18,28 @@
     --gray: #202427;
 }
 
-h3{
+.navStyle{
+  background-image: url(/navbg.svg);
+  background-size: cover;
+}
+
+h3,h1, .headerpara{
   font-family: "Hubot Sans", sans-serif;
 }
 
-.card-heading{
-  font-family: "Funnel Display", sans-serif;
+p{
+  font-family: "Hubot Sans", sans-serif;
+}
+
+.navitemFont{
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
 
+.card-heading{
+  font-family: "Host Grotesk", sans-serif;
+}
 
 .headerSec{
         display: block;
@@ -36,6 +49,8 @@ h3{
         object-position: center bottom;
         object-fit: cover;
 }
+
+
 
 .footerText, .cardItem{
   font-family: "Courier Prime", monospace;
@@ -51,13 +66,41 @@ h3{
 }
 
 
+.tilt-hover-container {
+  perspective: 1000px; 
+}
+
 .tilt-hover {
   transition: transform 0.5s ease;
-  transform-style: preserve-3d; 
+  transform-style: preserve-3d;
 }
 
 .tilt-hover:hover {
-  transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+  transform: rotateX(20deg) rotateY(20deg) scale(1.05);
+}
+
+.socials {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100vh; 
+  padding: 2px;
+  background-color: transparent; 
+  z-index: 1000; 
+} 
+
+@media (max-width: 768px) {
+  
+  .socials {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: transparent; 
+    z-index: 1000; 
+  }  
+
+  
 }
 
 @keyframes scrollText {
@@ -65,7 +108,7 @@ h3{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-50%); /* Adjust this based on logo width */
+      transform: translateX(-50%); 
     }
   }
 

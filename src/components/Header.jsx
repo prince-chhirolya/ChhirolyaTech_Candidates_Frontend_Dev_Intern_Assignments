@@ -52,18 +52,19 @@ function Header() {
       <header className="bg-[#181c1f] relative z-50 inset-x-0 top-0 xxl:px-24">
         <Navbar/>
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl py-24 lg:py-32 text-center">
-            <h1 className="text-lg font-semibold tracking-tight text-white sm:text-5xl">
+          <div className="mx-auto max-w-2xl pb-12 lg:pb-32 text-center flex flex-col justify-center">
+            <img src="/headerimg.png" className="h-28 w-32 mx-auto" alt="" srcset="" />
+            <h1 className="font-semibold tracking-tight text-white text-2xl ">
               Product documentation
               <br /> <span className="text-blue">your users will love</span>
             </h1>
-            <p className="mt-8 text-md font-medium text-slate-300 sm:text-sm">
+            <p className="mt-8 text-md headerpara font-medium text-primary sm:text-sm">
               Forget building your own custom docs platform. With GitBook you get beautiful documentation for your users, and a branch-based Git workflow for your team.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-2">
+            <div className="mt-10 lg:flex items-center justify-center gap-x-2">
               <button
                 type="button"
-                className="text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
+                className="text-white lg:w-1/2 border border-white w-full inline-flex items-center justify-center text-center bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-2 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">
                 <svg className="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"
@@ -75,7 +76,7 @@ function Header() {
               </button>
               <button
                 type="button"
-                className="text-black bg-Yellow  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center   me-2 mb-2">
+                className="text-black lg:w-1/4 w-full inline-flex items-center justify-center text-center bg-Yellow  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center   me-2 mb-2">
                 <a href="#" className="text-sm font-semibold text-gray-200">
                   Start for Free <span aria-hidden="true">→</span>
                 </a>
