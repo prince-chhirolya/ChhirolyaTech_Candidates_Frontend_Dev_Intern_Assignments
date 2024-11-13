@@ -107,7 +107,9 @@ const FullScreenSections = () => {
                         if (sectionData) {
                             setActiveBgColor(sectionData.bgColor);
                         }
-                        setShowSideBar(true)
+                        if(sectionData.id===entry.target.id){
+                            setShowSideBar(true)
+                        }
                     } else {
                         setShowSideBar(false)
                     }
