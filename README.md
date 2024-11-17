@@ -41,7 +41,7 @@ To run this project locally, follow these steps:
    npm start
    ```
 
-Now, open your browser and go to `http://localhost:3000` to view the project.
+Now, open your browser and go to `http://localhost:3500` to view the project.
 
 ## Deployment
 
