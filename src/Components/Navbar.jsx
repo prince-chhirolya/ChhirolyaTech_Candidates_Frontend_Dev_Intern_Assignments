@@ -74,10 +74,10 @@ const MainNavbar = () => {
                 <div className="absolute inset-0  z-10 opacity-75">
                     <img src="https://framerusercontent.com/images/owl1Ry3nFCuIDLfRWz8DY6TZg.svg" alt="" />
                 </div>
-                <navbar className="relative h-max max-w-full mt-1 rounded-none lg:px-8 lg:py-4 z-10">
-                    <div className="flex items-center justify-between text-blue-gray-900 mx-5 mt-2 sm:mt-0">
+                <navbar className="relative h-max max-w-full  rounded-none lg:px-8 lg:py-4 z-10">
+                    <div className="flex items-center justify-between text-blue-gray-900 mx-5 py-3">
 
-                        <svg width="302" height="34" viewBox="0 0 302 64" fill="#DEE5E5" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="180" height="34" viewBox="0 0 302 64" fill="#DEE5E5" xmlns="http://www.w3.org/2000/svg">
                             <path d="M108.362 47.1057C97.9981 47.1057 91.746 40.9375 91.746 32C91.746 23.1883 98.04 16.8943 108.404 16.8943C117.803 16.8943 122.881 21.426 123.3 27.3844H117.216C116.922 24.9926 114.824 22.0134 108.74 22.0134H108.069C101.774 22.0134 97.5785 25.664 97.5785 32C97.5785 38.336 101.858 41.9865 108.069 41.9865H108.74C114.866 41.9865 118.181 39.1332 118.181 36.7415V36.4058H108.53V31.2867H119.733C122.293 31.2867 123.72 32.7553 123.72 35.3149V46.6861H118.181V43.4132C117.048 44.8399 114.069 47.1057 108.362 47.1057Z" fill="DEE5E5" />
                             <path d="M133.009 46.6861H127.218V17.3139H133.009V46.6861Z" fill="#DEE5E5" />
                             <path d="M153.544 46.6861H147.754V22.433H135.921V17.3139H165.377V22.433H153.544V46.6861Z" fill="#DEE5E5" />
