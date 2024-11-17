@@ -1,0 +1,8 @@
+body{
+    /* background-color: #181C1F; */
+    font-family:  "Hubot Sans", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
