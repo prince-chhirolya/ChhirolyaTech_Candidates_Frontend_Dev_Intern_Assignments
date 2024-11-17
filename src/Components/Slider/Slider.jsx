@@ -8,6 +8,7 @@ const Slider = () => {
         { id: 4, name: "raycast", IconUrl: '/raycast.svg' },
         { id: 5, name: "deepl", IconUrl: '/deepl2.svg' },
         { id: 6, name: "ebay", IconUrl: '/ebay.svg' },
+        { id: 7, name: "keeper", IconUrl: '/keeper.svg' },
         { id: 8, name: "paypal", IconUrl: '/paypal.svg' },
         { id: 9, name: "fedex", IconUrl: '/fedex.svg' },
         { id: 10, name: "redhat", IconUrl: '/redhat.svg' },

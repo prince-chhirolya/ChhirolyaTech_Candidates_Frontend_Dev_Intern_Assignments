@@ -41,10 +41,10 @@ const Carousel = () => {
     const handleNext = () => {
         setCurrentIndex((prev) => (prev === data.length - 1 ? 0 : prev + 1));
     };
-    console.log(data.length-1,currentIndex)
+    
 
     return (
-        <div className='mt-12'>
+        <div className='mt-12 relative'>
 
             <div className=''>
                 {data.map((item, index) => (
@@ -57,13 +57,13 @@ const Carousel = () => {
                             <img
                                 src={item.bgImg}
                                 alt="carousel slide"
-                                className='w-full rounded-lg'
-                                style={{ height: '22rem' }}
+                                className='w-full rounded-xl  h-[62vh] md:h-[40vh] lg:h-[37vh] object-cover'
+                                // style={{ height: '22rem' }}
                             />
                             {/* Text Overlay */}
-                            <div className={`absolute inset-0  flex flex-col items-center text-center  rounded-lg gap-4 px-10 mt-10 ${item.textColor ? item.textColor : 'text-white'}`}>
+                            <div className={`absolute inset-0  flex flex-col items-center text-center  rounded-lg gap-4 px-12 mt-10 ${item.textColor ? item.textColor : 'text-white'}`}>
                                 <img src={item.companyIcon} alt="" />
-                                <p className='text-lg '>"{item.desc}"</p>
+                                <p className='text-lg'>"{item.desc}"</p>
                                 <span className="font-semibold" >
                                     <i className={`fa-solid fa-quote-right me-2  ${item.doubleQuoteColor ? item.doubleQuoteColor : 'text-white'}`}
                                     style={{transform:"scaleX(-1)"}}></i>

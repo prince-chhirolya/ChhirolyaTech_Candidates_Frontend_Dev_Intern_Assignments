@@ -155,7 +155,7 @@ const MainNavbar = () => {
                             <button
                                 className="lg:inline-block bg-bgAmberColor px-4 py-1 rounded-lg font-medium  tracking-wide hover:bg-btnHoverColor hover:hover:text-white transition duration-300 ease-in-out w-full"
                             >
-                                <span>Start for free <i class="fa-solid fa-arrow-right"></i></span>
+                                <span>Start for free <i class="fa-solid fa-arrow-right mx-1"></i></span>
 
                             </button>
                             <button

@@ -153,7 +153,7 @@ const Footer = () => {
         }
     ]
     return (
-        <div className='bg-heroBgColor  text-white'>
+        <div className='bg-heroBgColor  text-white relative'>
             <div className='flex flex-col justify-between w-full gap-y-20 mx-auto' style={{ maxWidth: "1024px" }}>
                 <footer className='py-15 mx-10'>
                     <nav className='flex flex-col justify-between flex-wrap lg:flex-row'>
