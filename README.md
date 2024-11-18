@@ -43,4 +43,4 @@ The project is fully styled using TailwindCSS, ensuring responsiveness across di
 
 ### Utils:
  A utils folder has been created to store application data in a structured manner.
- # Frontend Intern Candidate Assignments Project Submissions | Chhirolya Technologies
+
