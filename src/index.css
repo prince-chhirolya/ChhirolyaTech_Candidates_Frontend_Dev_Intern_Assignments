@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #f2f7f7;
+    --secondary: #f2f0ff;
+    --yellow: #f4e28d; 
+    --blue: #bbdde5;
+    --pink: #fda599;
+    --teal: #3f89a1;
+    --gray: #202427;
+}
+
+.navStyle{
+  background-image: url(/navbg.svg);
+  background-size: cover;
+}
+
+h3,h1, .headerpara{
+  font-family: "Hubot Sans", sans-serif;
+}
+
+p{
+  font-family: "Hubot Sans", sans-serif;
+}
+
+.navitemFont{
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+
+.card-heading{
+  font-family: "Host Grotesk", sans-serif;
+}
+
+.headerSec{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        object-position: center bottom;
+        object-fit: cover;
+}
+
+
+
+.footerText, .cardItem{
+  font-family: "Courier Prime", monospace;
+  font-size: 12px;
+}
+
+.selector{ 
+    animation: scrollText 5s infinite linear; 
+}
+
+.selector1 { 
+    animation: scrollText1 5s infinite linear; 
+}
+
+
+.tilt-hover-container {
+  perspective: 1000px; 
+}
+
+.tilt-hover {
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.tilt-hover:hover {
+  transform: rotateX(20deg) rotateY(20deg) scale(1.05);
+}
+
+.socials {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100vh; 
+  padding: 2px;
+  background-color: transparent; 
+  z-index: 1000; 
+} 
+
+@media (max-width: 768px) {
+  
+  .socials {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: transparent; 
+    z-index: 1000; 
+  }  
+
+  
+}
+
+@keyframes scrollText {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+
+
+  @keyframes scrollText1 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%); 
+    }
+  }
