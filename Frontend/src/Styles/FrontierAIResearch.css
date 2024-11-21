@@ -1,0 +1,151 @@
+/* FrontierAIResearch.css */
+
+.frontier-container {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.banner-text {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.banner-text span {
+  color: #ffffff;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover .logo-image {
+  transform: scale(1.1);
+}
+
+.frontier-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.frontier-title {
+  font-size: 6vw;
+  font-weight: bold;
+  margin: 20px 0;
+  background: linear-gradient(90deg, #1a2a6c, #2b5876, #000);
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1.1;
+}
+
+.frontier-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.research-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.research-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.research-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 600px) {
+  .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .banner-text {
+    font-size: 1.5rem;
+  }
+
+  .frontier-title {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .partners {
+    gap: 20px;
+  }
+
+  .logo-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .research-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .frontier-title {
+    font-size: 3rem;
+  }
+
+  .frontier-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .frontier-title {
+    font-size: 3.5rem;
+  }
+
+  .logo-image {
+    width: 80px;
+    height: 80px;
+  }
+}

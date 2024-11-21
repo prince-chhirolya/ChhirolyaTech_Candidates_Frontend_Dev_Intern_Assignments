@@ -1,0 +1,16 @@
+/* src/components/InfoSection.css */
+.info-section {
+  padding: 50px 10%;
+  text-align: left;
+}
+
+.info-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
