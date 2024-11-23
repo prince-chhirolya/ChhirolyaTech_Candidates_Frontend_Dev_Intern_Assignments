@@ -1,62 +1,85 @@
-# Frontend Intern Candidate Assignments Project Submissions | Chhirolya Technologies
 
-Welcome to the **Frontend Project Submission Repository**! This repository is dedicated to collecting and reviewing project submissions for candidates interested in Frontend roles. Please follow the instructions below to ensure a smooth and organized submission process.
+# GitBook Clone
 
-## Table of Contents
-- [Submission Guidelines](#submission-guidelines)
-- [Directory Structure](#directory-structure)
-- [How to Submit Your Project](#how-to-submit-your-project)
-- [Project Requirements](#project-requirements)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Contact](#contact)
+This is a simple clone of **GitBook** developed using **React**. The project is designed to showcase product documentation with a modern user interface, complete with a hero section, announcement banner, and fullscreen sections. It includes a responsive layout, sliders, interactive elements, and a sidebar navigation feature to simulate the GitBook experience.
 
-## Submission Guidelines
+## Features
 
-1. **Fork this Repository**: Start by forking this repository to your GitHub account.
-2. **Clone Your Forked Repository**: Clone the forked repo to your local machine to make the necessary changes.
-3. **Create a New Folder**: Name the folder in the format `FirstName_LastName_ProjectName` (e.g., `Prince_Chhirolya_ImageClassifier`).
-4. **Add Your Project Files**: Include all relevant files, scripts, and documentation in your folder. Make sure to add a README.md with project details.
-5. **Submit a Pull Request**: Once you’ve added your project files, create a pull request (PR) with a descriptive title and short summary.
+- **Responsive Layout:** The design is fully responsive, meaning it works well on devices ranging from mobile phones to desktops.
+- **Interactive Hero Section:** Includes a GitHub sign-up button and a free trial start button for users to interact with.
+- **Full-screen Sections:** Sections that showcase additional content and interactable features.
+- **Announcement Banner:** A prominent notification bar at the top of the page highlighting important updates.
+- **Slider Components:** Interactive sliders to display images and text content in a dynamic way.
+- **Sidebar Navigation:** A floating sidebar on the right-hand side, providing quick and intuitive access to different sections of the documentation with active section highlighting and interactive icons.
 
-## Directory Structure
+## Technologies Used
 
-Your folder should have the following structure: </br>
-Frontend-Project-Submissions/ </br>
-├── FirstName_LastName_ProjectName/ </br>
-│   ├── README.md           # Project overview and instructions </br>
-│   ├── src/                # Source code files </br>
-│   ├── data/               # (Optional) Dataset files or links </br>
-│   ├── requirements.txt    # Dependencies </br>
-│   ├── notebook.ipynb      # Jupyter Notebook if applicable </br>
-│   └── results/            # Any output files, plots, or analysis </br>
+- **React** for building the UI components.
+- **Tailwind CSS** for utility-first styling.
+- **Font Awesome** for icons.
+- **React Slider** for image and content carousels.
+- **CSS** for additional styling and responsive design.
 
+## Installation
 
-## How to Submit Your Project
+To run this project locally, follow these steps:
 
-1. Ensure all your files are included in the project folder.
-2. Double-check the naming convention and folder structure.
-3. Commit your changes with a meaningful message.
-4. Push the changes to your forked repository.
-5. Create a Pull Request (PR) to this repository.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YUSRIN20/gitbook-clone.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd gitbook-clone
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm start
+   ```
 
-## Project Requirements
+Now, open your browser and go to `http://localhost:3500` to view the project.
 
-- **Code**: Write clear, well-documented, and modular code.
-- **Documentation**: Include a `README.md` that describes your project, methods, and results.
-- **Reproducibility**: Ensure all dependencies are listed in `requirements.txt`.
-- **Data Handling**: For large datasets, provide a link rather than uploading files directly.
+## Deployment
 
-## Evaluation Criteria
+This project is deployed on **Netlify** for easy access. You can check out the live demo here:
 
-Your project will be evaluated on:
-- **Code Quality**: Readability, structure, and documentation.
-- **Project Completeness**: Adherence to requirements and overall completeness.
-- **Innovation & Approach**: Problem-solving skills and approach.
-- **Results & Analysis**: Accuracy, clarity of results, and insightful analysis.
+- **Netlify Demo URL:** [GitBook Clone Demo](https://git-book-clone.netlify.app/)
 
-## Contact
+## GitBook Original URL
 
-If you have questions, please contact info@chhirolya.tech or post your query in the issues section.
+The original GitBook can be found here:
 
+- **GitBook Official URL:** [GitBook](https://www.gitbook.com)
 
+## Project Structure
 
+```
+├── src/
+│   ├── Components/
+│   │   ├── Navbar.js
+│   │   ├── Hero.js
+│   │   ├── AnnouncementBanner.js
+│   │   ├── SidebarNav.js 
+│   │   └── Footer.js
+│   ├   |── FullScreenSections/
+│   │   └── FullScreenSections.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── public/
+│   └── index.html
+├── package.json
+└── README.md
+```
+
+## Contribution
+
+Feel free to fork the repository, make improvements, and create pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
