@@ -1,0 +1,12 @@
+.textContainer{
+   .heading{
+    font-size: 2em;
+    font-weight: 600;
+   }
+   #subText{
+    margin: auto;
+    font-size: 2em;
+    font-weight: 600;
+    color: #BBDDE5;
+   }
+}
