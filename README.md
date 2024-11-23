@@ -3,12 +3,14 @@
 Welcome to the **Frontend Project Submission Repository**! This repository is dedicated to collecting and reviewing project submissions for candidates interested in Frontend roles. Please follow the instructions below to ensure a smooth and organized submission process.
 
 ## Table of Contents
-- [Submission Guidelines](#submission-guidelines)
-- [Directory Structure](#directory-structure)
-- [How to Submit Your Project](#how-to-submit-your-project)
-- [Project Requirements](#project-requirements)
-- [Evaluation Criteria](#evaluation-criteria)
-- [Contact](#contact)
+- [Frontend Intern Candidate Assignments Project Submissions | Chhirolya Technologies](#frontend-intern-candidate-assignments-project-submissions--chhirolya-technologies)
+  - [Table of Contents](#table-of-contents)
+  - [Submission Guidelines](#submission-guidelines)
+  - [Directory Structure](#directory-structure)
+  - [How to Submit Your Project](#how-to-submit-your-project)
+  - [Project Requirements](#project-requirements)
+  - [Evaluation Criteria](#evaluation-criteria)
+  - [Contact](#contact)
 
 ## Submission Guidelines
 
